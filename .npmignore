@@ -1,0 +1,5 @@
+*.sublime-*
+.cache
+.github
+.DS_Store
+docs/

@@ -1,0 +1,27 @@
+{
+  "name": "@uwdata/citation-query",
+  "version": "0.0.1",
+  "description": "Retrieve paper citatation data from doi.org and Semantic Scholar.",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "bin": {
+    "doi": "./bin/doi.js",
+    "s2id": "./bin/s2id.js",
+    "retrieve-papers": "./bin/retrieve-papers.js"
+  },
+  "scripts": {
+    "test": "mocha 'test/**/*-test.js'",
+    "lint": "eslint '**/*.js'",
+    "prepublishOnly": "npm run test & npm run lint"
+  },
+  "dependencies": {
+    "@uwdata/file-cache": "^0.0.1",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "mocha": "^10.0.0"
+  }
+}
