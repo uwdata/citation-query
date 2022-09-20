@@ -1,4 +1,5 @@
-const fetch = globalThis.fetch || (await import('node-fetch')).default;
+import fetch from './fetch.js';
+
 const API_URL = 'https://api.semanticscholar.org/graph/v1/';
 
 export function urlS2(endpoint, params = {}, method = 'paper') {

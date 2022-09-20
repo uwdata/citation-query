@@ -1,4 +1,4 @@
-const fetch = globalThis.fetch || (await import('node-fetch')).default;
+import fetch from './fetch.js';
 
 export function lookupDOI(doi) {
   return fetch(`https://doi.org/${doi}`, {
