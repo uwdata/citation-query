@@ -34,9 +34,11 @@ const getS2 = cacheMethod({
 const s2params = {
   fields: [
     'externalIds', 'url', 'title', 'abstract', 'venue', 'year',
-    'authors.name', 'authors.externalIds',
-    'authors.citationCount', 'authors.hIndex',
-    'references.externalIds', 'references.title', 'references.year',
+    'authors.name', 'authors.externalIds', 'authors.citationCount', 'authors.hIndex',
+    'references.externalIds', 'references.authors', 'references.title', 'references.year',
+    'references.referenceCount', 'references.citationCount', 'references.influentialCitationCount',
+    'citations.externalIds', 'citations.authors', 'citations.title', 'citations.year',
+    'citations.referenceCount', 'citations.citationCount', 'citations.influentialCitationCount',
     'referenceCount', 'citationCount', 'influentialCitationCount',
     'tldr', 'embedding'
   ]
